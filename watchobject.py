@@ -83,7 +83,7 @@ while True:
             os.system('clear')
             try:
                 json.loads(update.content)
-                pprint(update.json)
+                pprint(update.json())
 
             except ValueError:   # Caught when the JSON Is invalid
 
